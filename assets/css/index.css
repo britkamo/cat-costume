@@ -11,3 +11,8 @@ body {
 /* On devices wider than 940px */
 @media(min-width: 940px) {
 }
+
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
+*/
