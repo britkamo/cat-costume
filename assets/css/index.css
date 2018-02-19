@@ -3,6 +3,149 @@ body {
   background-color: #fff;
 }
 
+h1 {
+  font-family: 'PT Sans Narrow';
+  font-weight: bold;
+  font-size: 1.875em;
+  color: #323232;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'PT Sans Narrow';
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #00897f;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'PT Serif';
+  font-size: 1em;
+  line-height: 2em;
+  color: #323232;
+  margin: 0;
+}
+
+#about h3 {
+  padding-bottom: 80px;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-family: 'PT Serif';
+  font-size: 0.875em;
+  line-height: 1.75em;
+  color: #323232;
+}
+
+a{
+  font-family: 'PT Serif';
+  font-weight: bold;
+  font-size: 1em;
+  color: #f26522;
+  text-decoration: none;
+}
+
+nav {
+  height: 80px;
+  padding: 0px 40px;
+}
+
+nav h1 {
+  font-family: 'PT Sans Narrow';
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #323232;
+  margin-top: 20px;
+  margin-left: 40px;
+  float: left;
+}
+
+nav p {
+  font-family: 'PT Sans';
+  font-size: 0.9em;
+  color: #323232;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.navlinks{
+    float: right;
+}
+footer {
+  height: 80px;
+  background-color: #00897f;
+}
+
+footer h1 {
+  font-family: 'PT Sans Narrow';
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.biobox {
+  background-color: #eeeeee;
+  text-align: left;
+  display: inline-block;
+  padding: 30px;
+  margin: 0 30px;
+  width: 350px;
+  height: 200px;
+  vertical-align: top;
+}
+
+.biobox h2 {
+  text-align: center;
+}
+
+.infoBox {
+  background-color: #ffffff;
+  text-align: left;
+  display: inline-block;
+  padding: 30px;
+  margin: 0 30px;
+  width: 350px;
+  height: 200px;
+  vertical-align: top;
+}
+
+.main h1 {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px;
+  clear: both;
+}
+
+.section h3{
+  text-align: left;
+}
+.splash img {
+  width: 100%;
+}
+
+#contactUs {
+  background-color: #eeeeee;
+}
+
+#addressBlock {
+  float: right;
+  width: 290px;
+}
+
 
 /* On devices wider than 660px */
 @media(min-width: 660px) {
