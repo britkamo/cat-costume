@@ -3,6 +3,9 @@ body {
   background-color: #fff;
 }
 
+
+/* Headers */
+
 h1 {
   font-family: 'PT Sans Narrow';
   font-weight: bold;
@@ -35,6 +38,17 @@ h3 {
   margin-right: auto;
 }
 
+.main h1 {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.section h3{
+  text-align: left;
+}
+
+/* Basic Typography */
+
 p {
   font-family: 'PT Serif';
   font-size: 0.875em;
@@ -49,6 +63,25 @@ a{
   color: #f26522;
   text-decoration: none;
 }
+
+.section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px;
+  clear: both;
+}
+
+#contactUs {
+  background-color: #eeeeee;
+}
+
+#addressBlock {
+  float: right;
+  width: 290px;
+}
+
+/* Navigation Bar */
 
 nav {
   height: 80px;
@@ -77,6 +110,10 @@ nav p {
 .navlinks{
     float: right;
 }
+
+
+/* Footer */
+
 footer {
   height: 80px;
   background-color: #00897f;
@@ -90,6 +127,10 @@ footer h1 {
   text-align: center;
   padding-top: 30px;
 }
+
+
+
+/* Call Out Boxes */
 
 .biobox {
   background-color: #eeeeee;
@@ -117,34 +158,22 @@ footer h1 {
   vertical-align: top;
 }
 
-.main h1 {
-  text-align: center;
-  padding-bottom: 45px;
-}
+/* Image Styling */
 
-.section {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 80px;
-  clear: both;
-}
-
-.section h3{
-  text-align: left;
-}
 .splash img {
   width: 100%;
 }
 
-#contactUs {
-  background-color: #eeeeee;
+#actionPictures img {
+  border-radius: 50%;
+  width: 255px;
+}
+#actionPictures :nth-child(2){
+  margin: 0 55px;
 }
 
-#addressBlock {
-  float: right;
-  width: 290px;
-}
+
+
 
 
 /* On devices wider than 660px */
