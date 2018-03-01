@@ -38,6 +38,16 @@ h3 {
   margin-right: auto;
 }
 
+.biobox h2,
+  .infoBox h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.infoBox h3 {
+  clear: both;
+}
+
 .main h1 {
   text-align: center;
   padding-bottom: 45px;
@@ -72,14 +82,19 @@ a{
   clear: both;
 }
 
+.thelabel{
+  text-transform: uppercase;
+  float: left;
+}
+
+.theValue{
+  float: left;
+  margin-left: 10px;
+}
 #contactUs {
   background-color: #eeeeee;
 }
 
-#addressBlock {
-  float: right;
-  width: 290px;
-}
 
 /* Navigation Bar */
 
@@ -141,10 +156,6 @@ footer h1 {
   width: 350px;
   height: 200px;
   vertical-align: top;
-}
-
-.biobox h2 {
-  text-align: center;
 }
 
 .infoBox {
