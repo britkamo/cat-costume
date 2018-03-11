@@ -1,6 +1,21 @@
 body {
   margin: 0;
   background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main, .secondary {
+  width:100%;
+  padding-bottom: 40px;
+}
+
+.secondary {
+  background-color: #eeeeee;
+}
+.constrain {
+  max-width: 880px;
+  margin:auto;
 }
 
 
@@ -33,14 +48,21 @@ h3 {
 
 #about h3 {
   padding-bottom: 80px;
-  width: 880px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main h1 {
+.biobox h2 {
   text-align: center;
-  padding-bottom: 45px;
+}
+
+.infoBox h2 {
+  text-align: center;
+}
+
+.main h1, .secondary h1 {
+  text-align: center;
+  padding: 40px 0 45px 0;
 }
 
 .section h3{
@@ -68,12 +90,10 @@ a{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 80px;
+  padding: 40px 0;
   clear: both;
-}
-
-#contactUs {
-  background-color: #eeeeee;
+  width:100%;
+  overflow: hidden;
 }
 
 #addressBlock {
@@ -85,6 +105,7 @@ a{
 
 nav {
   height: 80px;
+  width: 100%;
   padding: 0px 40px;
 }
 
@@ -116,6 +137,7 @@ nav p {
 
 footer {
   height: 80px;
+  width: 100%;
   background-color: #00897f;
 }
 
@@ -132,20 +154,25 @@ footer h1 {
 
 /* Call Out Boxes */
 
+.boxes{
+  display:flex;
+  justify-content: space-between;
+  margin: 0 -30px;
+}
+
+.boxes div {
+  margin: 0 30px;
+}
+
 .biobox {
   background-color: #eeeeee;
   text-align: left;
   display: inline-block;
   padding: 30px;
-  margin: 0 30px;
+  /* margin: 0 30px; */
   width: 40%;
   max-width: 350px;
-  height: 200px;
   vertical-align: top;
-}
-
-.biobox h2 {
-  text-align: center;
 }
 
 .infoBox {
@@ -155,7 +182,6 @@ footer h1 {
   padding: 30px;
   margin: 0 30px;
   width: 350px;
-  height: 200px;
   vertical-align: top;
 }
 
@@ -165,16 +191,29 @@ footer h1 {
   width: 100%;
 }
 
+.splash {
+  width: 100%;
+}
+
+#actionPictures {
+  display:flex;
+  justify-content: space-between;
+  /* margin: 0 -30px; */
+}
+
 #actionPictures img {
   border-radius: 50%;
-  width: 255px;
+  max-width: 255px;
 }
 #actionPictures :nth-child(2){
   margin: 0 55px;
 }
 
 
+/* On devices narrower than 1024px */
+@media(max-width: 1024px) {
 
+}
 
 
 /* On devices wider than 660px */
