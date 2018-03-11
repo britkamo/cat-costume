@@ -119,13 +119,14 @@ nav h1 {
   float: left;
 }
 
-nav p {
+nav a {
   font-family: 'PT Sans';
   font-size: 0.9em;
   color: #323232;
   display: inline-block;
   margin-left: 40px;
   margin-top: 30px;
+  text-decoration: none;
 }
 
 .navlinks{
@@ -169,9 +170,7 @@ footer h1 {
   text-align: left;
   display: inline-block;
   padding: 30px;
-  /* margin: 0 30px; */
   width: 40%;
-  max-width: 350px;
   vertical-align: top;
 }
 
@@ -180,7 +179,6 @@ footer h1 {
   text-align: left;
   display: inline-block;
   padding: 30px;
-  margin: 0 30px;
   width: 350px;
   vertical-align: top;
 }
@@ -203,21 +201,57 @@ footer h1 {
 
 #actionPictures img {
   border-radius: 50%;
-  max-width: 255px;
+  width: 255px;
 }
 #actionPictures :nth-child(2){
   margin: 0 55px;
 }
 
-
-/* On devices narrower than 1024px */
-@media(max-width: 1024px) {
-
+#primary_img {
+  display: none;
 }
 
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
+/* On devices narrower than 1024px */
+@media(max-width: 1024px) {
+  .constrain {
+    max-width: 90%;
+  }
+}
+
+/* On devices narrower than 960px */
+@media(max-width: 960px) {
+  #actionPictures img {
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+  }
+}
+
+/* On devices narrower than 768px */
+@media(max-width: 768px) {
+  .boxes, #actionPictures {
+    flex-flow: column;
+    align-items: center;
+  }
+  #actionPictures .extra {
+    display:none;
+  }
+  #actionPictures img {
+    width: auto;
+    height: auto;
+  }
+  nav {
+    height: auto;
+  }
+
+  .boxes div {
+    width: 80%;
+    margin-top: 40px;
+  }
+  .boxes div:first-of-type {
+    margin-top: 0px;
+  }
 }
 
 /* On devices wider than 940px */
